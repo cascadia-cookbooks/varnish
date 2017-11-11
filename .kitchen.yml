@@ -13,5 +13,6 @@ platforms:
 suites:
   - name: default
     run_list:
-    - recipe[cas_varnish::default]
+      - recipe[yum-epel::default]
+      - recipe[cas_varnish::default]
     attributes: 
