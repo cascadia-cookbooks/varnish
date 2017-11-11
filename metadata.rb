@@ -9,8 +9,6 @@ version '0.1.0'
 source_url 'https://github.com/cascadia-cookbooks/varnish'
 issues_url 'https://github.com/cascadia-cookbooks/varnish/issues'
 
-depends 'yum-epel'
-
 supports 'ubuntu', '>=16.04'
 supports 'rhel', '>=7'
 supports 'centos', '>=7'
