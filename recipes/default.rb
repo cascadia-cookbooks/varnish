@@ -6,3 +6,4 @@
 
 include_recipe 'cas_varnish::dependencies'
 include_recipe 'cas_varnish::install'
+include_recipe 'cas_varnish::configure'
