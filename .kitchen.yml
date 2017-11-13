@@ -16,3 +16,5 @@ suites:
       - recipe[yum-epel::default]
       - recipe[cas_varnish::default]
     attributes: 
+      cas_varnish:
+        secret: 'secretattribute'
