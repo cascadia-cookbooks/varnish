@@ -23,6 +23,14 @@ template_destination = value_for_platform(
     }
 )
 
+if node['platform_family'] == 'debian'
+    directory '/etc/systemd/system/varnish.service.d/' do
+        owner 'root'
+        group 'root'
+        mode  0755
+    end
+end
+
 service 'varnish' do
     action [:enable, :start]
 end
