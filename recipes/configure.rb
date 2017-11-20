@@ -23,6 +23,7 @@ template_destination = value_for_platform(
     }
 )
 
+# Create parent directory on Debian based platforms
 if node['platform_family'] == 'debian'
     directory '/etc/systemd/system/varnish.service.d/' do
         owner 'root'
