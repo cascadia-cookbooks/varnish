@@ -32,6 +32,13 @@ if node['platform_family'] == 'debian'
     end
 end
 
+# Handlers
+
+execute 'sys_reload' do
+    command 'systemctl daemon-reload'
+    action :nothing
+end
+
 service 'varnish' do
     action [:enable, :start]
 end
